@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Restarting PassKit"
+launchctl unload /System/Library/LaunchDaemons/com.apple.passd.plist
+launchctl load /System/Library/LaunchDaemons/com.apple.passd.plist
+echo "Initialization done!"
